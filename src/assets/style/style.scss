@@ -1,0 +1,14 @@
+@import 'reset.scss';
+@import 'variables.scss';
+
+body{
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bg-blue;
+  color: $txt-primary;
+  margin: 5vw;
+}
+
+@import 'home.scss';
+@import 'components/widget.scss';

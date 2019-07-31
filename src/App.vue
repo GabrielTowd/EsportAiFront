@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <base-widget 
+      :hasHeader='true'
+      headerValue='Sorts'
+      componentRoute='test.vue'
+      :data='this.someProperties'
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BaseWidget from './components/BaseWidget.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    BaseWidget
+  },
+  data: function () {
+    return {
+      someProperties: {
+        test: 'toto',
+        testdeux: 'tata'
+      }
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang='scss'>
+  @import './assets/style/style.scss';
 </style>
