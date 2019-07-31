@@ -1,29 +1,16 @@
 <template>
   <div id="app">
-    <base-widget 
-      :hasHeader='true'
-      headerValue='Sorts'
-      componentRoute='test.vue'
-      :data='this.someProperties'
-    />
+    <hero></hero>
   </div>
 </template>
 
 <script>
-import BaseWidget from './components/BaseWidget.vue'
+import Hero from './pages/Hero.vue'
 
 export default {
   name: 'app',
   components: {
-    BaseWidget
-  },
-  data: function () {
-    return {
-      someProperties: {
-        test: 'toto',
-        testdeux: 'tata'
-      }
-    }
+    Hero
   }
 }
 </script>

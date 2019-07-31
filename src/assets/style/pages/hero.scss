@@ -1,0 +1,23 @@
+.hero{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: $padding-normal;
+  grid-row-gap: $padding-normal;
+  .tips{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    .content{  
+      min-height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: $padding-normal;
+      p{
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+  }
+}
