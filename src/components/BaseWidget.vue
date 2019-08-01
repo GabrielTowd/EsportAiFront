@@ -10,7 +10,6 @@
     </div>
     <component
       :is='currentComponent'
-      v-bind:data='currentData'
       v-bind:count='count'
     ></component>
   </div>
@@ -24,25 +23,24 @@ export default {
     }
   },
   props: {
-    hasHeader: Boolean,
+    hasHeader: {
+      type: Boolean,
+      default: false
+    },
     headerValue: String,
-    hasHeaderNav: Boolean,
+    hasHeaderNav: {
+      type: Boolean,
+      default: false
+    },
     widgetClass: String,
     componentRoute: {
       type: String,
-      isRequired: true
-    },
-    data: {
-      type: Object,
       isRequired: true
     }
   },
   computed: {
     currentComponent: function () {
       return () => import(`./${this.componentRoute}`)
-    },
-    currentData: function () {
-      return this.data
     }
   }
 }

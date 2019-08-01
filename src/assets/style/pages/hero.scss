@@ -1,23 +1,56 @@
-.hero{
+.hero {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: $padding-normal;
+  grid-template-columns: 32% 32% 32%;
+  grid-column-gap: 2%;
   grid-row-gap: $padding-normal;
-  .tips{
+
+  .infos{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 15px;
+  }
+
+  .skins {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: max-content;
+
+    >div {
+      display: flex;
+      justify-content: space-between;
+      max-width: 100%;
+      overflow: scroll;
+
+      img {
+        max-width: 22%;
+        margin-right: 4%; 
+      }
+    }
+  }
+
+  .tips {
     grid-column-start: 2;
     grid-column-end: 3;
-    .content{  
-      min-height: 20vh;
+
+    .content {
+      height: 16vh;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: $padding-normal;
-      p{
-        font-size: 22px;
+      overflow: scroll;
+
+      p {
+        font-size: 20px;
         font-style: italic;
         font-weight: 300;
         text-align: center;
+        line-height: 1.3;
       }
     }
+  }
+
+  .stats {
+    grid-column-start: 3;
   }
 }
