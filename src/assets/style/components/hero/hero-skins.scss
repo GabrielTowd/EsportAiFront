@@ -1,0 +1,13 @@
+.skins {
+  >div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: scroll;
+
+    img {
+      max-width: 22%;
+      margin-right: 4%;
+    }
+  }
+}

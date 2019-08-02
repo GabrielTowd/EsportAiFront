@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <g id="Group_1" data-name="Group 1" transform="translate(-778 -1216)">
+    <text id="Q" transform="translate(790 1239)" fill="#acacc4" font-size="14" font-family="Lato-Semibold, Lato" font-weight="600"><tspan x="0" y="0">Q</tspan></text>
+    <g id="Rectangle_26" data-name="Rectangle 26" transform="translate(778 1216)" fill="none" stroke="#acacc4" stroke-width="2">
+      <rect width="35" height="35" rx="4" stroke="none"/>
+      <rect x="1" y="1" width="33" height="33" rx="3" fill="none"/>
+    </g>
+  </g>
+</svg>

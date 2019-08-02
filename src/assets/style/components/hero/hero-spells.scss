@@ -1,0 +1,66 @@
+.spells {
+  >div:not(.header){
+    padding: $padding-normal 0 $padding-half 0;
+  }
+
+  .spells-details {
+    display: flex;
+    justify-content: space-between;
+
+    >div {
+      width: 20%;
+      padding: 0 $padding-normal;
+      text-align: center;
+
+      &:not(:last-child){
+        border-right: 1px solid $border-color;
+      }
+
+      .top {
+        margin: auto;
+
+        span{
+          color: $txt-secondary;
+          font-size: 12px;
+        }
+
+        img {
+          width: 30px;
+          border-radius: 4px;
+          vertical-align: middle;
+          margin: 0 5px;
+
+          &:nth-child(2) {
+            border: 2px solid $bg-black;
+          }
+        }
+      }
+
+      h2{
+        margin: 15px 0 5px 0;
+        font-size: $fnt-normal;
+        font-weight: 700;
+        color: $txt-primary;
+      }
+
+      .description{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        line-height: 1.2;
+        max-height: 1.2*4; 
+        font-size: $fnt-small;
+        font-weight: 300;
+        color: $txt-secondary;
+      }
+    }
+  }
+
+  .see-more{
+    display: block;
+    margin: auto;
+    margin-top: $padding-half;
+  }
+}

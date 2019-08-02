@@ -1,0 +1,23 @@
+.objects {
+  .content {
+    &:nth-child(even) {
+      background-color: $bg-black;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px $padding-normal;
+
+    p{
+      font-size: $fnt-normal;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    > div img {
+      width: 30px;
+      margin-left: 10px;
+    }
+  }
+}

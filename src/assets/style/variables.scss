@@ -5,9 +5,11 @@ $txt-primary: #E7E7F2;
 $txt-secondary: #ACACC4;
 $txt-ternary: #525260;
 $accent-color: #FF4D4D;
+$border-color: #2C2C31;
 
-$fnt-normal: 14px;
-$fnt-small: 11px;
-$fnt-big: 16px;
+$fnt-small: 10px; // equal 12px on the design
+$fnt-normal: 12px; // equal 16px on the design
+$fnt-big: 14px; // equal 18px on the design
 
-$padding-normal: 20px;
+$padding-normal: 20px; // equal 30px on the design
+$padding-half: 10px;

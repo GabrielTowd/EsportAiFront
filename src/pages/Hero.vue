@@ -1,24 +1,45 @@
 <template>
   <div class="hero">
-    <base-widget
-      componentRoute="Hero/HeroInfos.vue"
-      widgetClass="infos"
-    />
-    <base-widget
-      :hasHeader="true"
-      headerValue="Skins"
-      :hasHeaderNav="false"
-      componentRoute="Hero/HeroSkins.vue"
-      widgetClass="skins"
-    />
-    <base-widget
-      :hasHeader="true"
-      headerValue="Astuces"
-      :hasHeaderNav="true"
-      componentRoute="Hero/HeroTips.vue"
-      widgetClass="tips"
-    />
-    <div class="stats"></div>
+    <div class="main-left">
+      <base-widget
+        componentRoute="Hero/HeroInfos.vue"
+        widgetClass="infos"
+      />
+      <base-widget
+        :hasHeader="true"
+        headerValue="Skins"
+        :hasHeaderNav="false"
+        componentRoute="Hero/HeroSkins.vue"
+        widgetClass="skins"
+      />
+    </div>
+    <div class="main-right">
+      <base-widget
+        :hasHeader="true"
+        headerValue="Sorts"
+        componentRoute="Hero/HeroSpells.vue"
+        widgetClass="spells"
+      />
+      <div class="sub-right-bottom">
+        <div>
+          <base-widget
+            :hasHeader="true"
+            headerValue="Astuces"
+            :hasHeaderNav="true"
+            componentRoute="Hero/HeroTips.vue"
+            widgetClass="tips"
+          />
+          <base-widget
+            :hasHeader="true"
+            headerValue="Objects Recommandés"
+            :hasHeaderNav="true"
+            componentRoute="Hero/HeroObjects.vue"
+            widgetClass="objects"
+          />
+        </div>
+        <!-- Stats component here -->
+      </div>
+    </div>
   </div>
 </template>
 

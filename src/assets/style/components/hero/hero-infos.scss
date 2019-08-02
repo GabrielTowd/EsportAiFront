@@ -1,0 +1,100 @@
+.infos {
+  padding: $padding-normal;
+  margin-bottom: $padding-normal;
+
+  .back {
+    span {
+      margin-left: 8px;
+      color: $txt-secondary;
+      font-weight: 600;
+    }
+  }
+
+  .hero-pic {
+    border-radius: 200px;
+    width: 80px;
+    display: block;
+    margin: $padding-normal auto 10px auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    text-transform: initial;
+    text-align: center;
+    color: $txt-secondary;
+    font-size: $fnt-big;
+  }
+
+  .label {
+    text-transform: uppercase;
+    color: $txt-ternary;
+    font-size: $fnt-big;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .value {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .main-infos {
+    margin: $padding-normal 0;
+    display: flex;
+    justify-content: space-between;
+
+    .difficulty {
+      padding-left: 15px;
+      padding-right: 20px;
+      border-left: 1px solid $border-color;
+      box-sizing: border-box;
+    }
+  }
+
+  .sub-infos {
+    display: flex;
+    justify-content: space-between;
+
+    .defense,
+    .magic {
+      padding-left: 15px;
+      border-left: 1px solid $border-color;
+      box-sizing: border-box;
+    }
+
+    .magic {
+      padding-right: 20px;
+    }
+  }
+
+  .history {
+    margin-top: $padding-normal;
+
+    .content {
+      font-size: $fnt-normal;
+      line-height: 1.4;
+    }
+
+    .see-more {
+      display: flex;
+      justify-content: flex-end;
+      p{
+        cursor: pointer;
+        padding: 5px 10px;
+        color: $accent-color;
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+        width: max-content;
+        font-size: 11px;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+    }
+  }
+}
