@@ -3,10 +3,14 @@
   margin-bottom: $padding-normal;
 
   .back {
+    cursor: pointer;
+    user-select: none;
+
     span {
       margin-left: 8px;
       color: $txt-secondary;
       font-weight: 600;
+
     }
   }
 
@@ -84,7 +88,9 @@
     .see-more {
       display: flex;
       justify-content: flex-end;
-      p{
+      user-select: none;
+
+      p {
         cursor: pointer;
         padding: 5px 10px;
         color: $accent-color;

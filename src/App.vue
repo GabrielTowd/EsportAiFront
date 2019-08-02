@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <hero heroName="Aatrox"></hero>
+    <home></home>
   </div>
 </template>
 
 <script>
-import Hero from './pages/Hero.vue'
+import Home from './pages/Home.vue'
 
 export default {
   name: 'app',
   components: {
-    Hero
+    Home
   }
 }
 </script>

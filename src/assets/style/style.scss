@@ -7,9 +7,11 @@ body{
   -moz-osx-font-smoothing: grayscale;
   background-color: $bg-blue;
   color: $txt-primary;
-  margin: 50px;
+  transition: all ease 1s;
 }
 
-@import 'components/widget.scss';
+@import 'components/base-widget.scss';
+@import 'components/search-input.scss';
 
 @import 'pages/hero.scss';
+@import 'pages/home.scss'

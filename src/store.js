@@ -4,8 +4,14 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  mutations: {
+    toggleHasResult: function (state) {
+      state.hasResult = !state.hasResult
+    }
+  },
   // MAKE BASE URL VERSION DYNAMIC
   state: {
+    "hasResult": false,
     "baseUrl": "http://ddragon.leagueoflegends.com/cdn/6.24.1/",
     "id": "Aatrox",
     "key": "266",

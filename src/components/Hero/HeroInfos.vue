@@ -2,7 +2,7 @@
   <div>
     <div class="back">
       <img src="../../assets/img/arrow-left.svg">
-      <span>Retour</span>
+      <span @click="this.back">Retour</span>
     </div>
     <img :src="this.heroUrlPic" alt="Hero pic square" class="hero-pic">
     <h1>{{ this.$store.state.name }}</h1>
@@ -48,7 +48,13 @@ export default {
   data () {
     return {
       // GET VERSION DYNAMICALLY !
-      heroUrlPic: `http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/${this.$store.state.name}.png`
+      heroUrlPic: `${this.$store.state.baseUrl}img/champion/${this.$store.state.name}.png`
+    }
+  },
+  methods: {
+    back: function () {
+      this.$store.commit('toggleHasResult') 
+      window.scrollTo(0,0)
     }
   }
 }

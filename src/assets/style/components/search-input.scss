@@ -1,0 +1,26 @@
+.search {
+  border-bottom: 3px solid $txt-ternary;
+  padding-bottom: $padding-half;
+
+  input {
+    width: 40vw;
+    font-size: 30px;
+    vertical-align: top;
+    background: transparent;
+    border: none;
+    color: $txt-primary;
+
+    &::placeholder{
+      color: $txt-ternary;
+    }
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  img {
+    max-height: 40px;
+    opacity: .3;
+  }
+}

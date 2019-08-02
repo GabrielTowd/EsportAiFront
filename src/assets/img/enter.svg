@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="161" height="57" viewBox="0 0 161 57">
+  <g id="enter" transform="translate(-1348 -500)">
+    <text id="Enter-2" data-name="Enter" transform="translate(1367 539)" fill="#acacc4" font-size="28" font-family="Lato-Regular, Lato"><tspan x="0" y="0">Enter</tspan></text>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(1348 500)" fill="none" stroke="#acacc4" stroke-width="3">
+      <rect width="161" height="57" rx="8" stroke="none"/>
+      <rect x="1.5" y="1.5" width="158" height="54" rx="6.5" fill="none"/>
+    </g>
+    <path id="Path_1" data-name="Path 1" d="M1239.387,680.771v9.2h-19.294l5.592-5.592-5.592,5.592,5.592,5.592" transform="translate(248.686 -159)" fill="none" stroke="#acacc4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>
