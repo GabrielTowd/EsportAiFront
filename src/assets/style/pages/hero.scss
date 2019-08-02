@@ -16,14 +16,18 @@
       justify-content: space-between;
       margin-top: $padding-normal;
 
+      .center{
+        padding-right: $padding-half;
+      }
+
+      >div:not(.center){
+        margin-left: $padding-half;
+      }
+
       >div{
         width: 50%;
       }
     }
-  }
-
-  >div {
-    height: max-content;
   }
 
   @import '../components/hero/hero-infos.scss';
@@ -31,5 +35,6 @@
   @import '../components/hero/hero-tips.scss';
   @import '../components/hero/hero-objects.scss';
   @import '../components/hero/hero-spells.scss';
+  @import '../components/hero/hero-stats.scss';
 
 }

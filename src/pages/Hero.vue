@@ -21,7 +21,7 @@
         widgetClass="spells"
       />
       <div class="sub-right-bottom">
-        <div>
+        <div class="center">
           <base-widget
             :hasHeader="true"
             headerValue="Astuces"
@@ -37,7 +37,12 @@
             widgetClass="objects"
           />
         </div>
-        <!-- Stats component here -->
+        <base-widget
+          :hasHeader="true"
+          headerValue="Stats"
+          componentRoute="Hero/HeroStats.vue"
+          widgetClass="stats"
+        />
       </div>
     </div>
   </div>
