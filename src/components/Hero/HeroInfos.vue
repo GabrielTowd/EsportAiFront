@@ -1,17 +1,17 @@
 <template>
   <div class="hero-infos">
     <div class="back">
-      <img src="../../assets/img/arrow-left.svg">
+      <img src="../../assets/img/arrow-left.svg" />
       <span @click="this.back">Retour</span>
     </div>
-    <img :src="this.heroUrlPic" alt="Hero pic square" class="hero-pic">
+    <img :src="this.heroUrlPic" alt="Hero pic square" class="hero-pic" />
     <h1>{{ this.$store.state.name }}</h1>
     <h2>{{ this.$store.state.title }}</h2>
     <div class="main-infos">
       <div class="role">
         <p class="label">Rôle</p>
         <p class="value">
-          <span :key="key" v-for="(role, key) in this.$store.state.tags">{{ role }} </span>
+          <span :key="key" v-for="(role, key) in this.$store.state.tags">{{ role }}</span>
         </p>
       </div>
       <div class="difficulty">
@@ -45,16 +45,16 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       heroUrlPic: `${this.$store.state.baseUrl}img/champion/${this.$store.state.name}.png`
-    }
+    };
   },
   methods: {
-    back: function () {
-      this.$store.commit('toggleHasResult') 
-      window.scrollTo(0,0)
+    back: function() {
+      this.$store.commit("SHOW_VIEW");
+      window.scrollTo(0, 0);
     }
   }
-}
+};
 </script>

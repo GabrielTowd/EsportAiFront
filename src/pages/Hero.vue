@@ -1,9 +1,8 @@
 <template>
   <div class="hero">
-    <div class="main-left">
-      <base-widget
-        componentRoute="Hero/HeroInfos.vue"
-      />
+    <h1>{{ currentChampion.name }}</h1>
+    <!-- <div class="main-left">
+      <base-widget componentRoute="Hero/HeroInfos.vue" />
       <base-widget
         :hasHeader="true"
         headerValue="Skins"
@@ -12,11 +11,7 @@
       />
     </div>
     <div class="main-right">
-      <base-widget
-        :hasHeader="true"
-        headerValue="Sorts"
-        componentRoute="Hero/HeroSpells.vue"
-      />
+      <base-widget :hasHeader="true" headerValue="Sorts" componentRoute="Hero/HeroSpells.vue" />
       <div class="sub-right-bottom">
         <div class="center">
           <base-widget
@@ -32,29 +27,23 @@
             componentRoute="Hero/HeroObjects.vue"
           />
         </div>
-        <base-widget
-          :hasHeader="true"
-          headerValue="Stats"
-          componentRoute="Hero/HeroStats.vue"
-        />
+        <base-widget :hasHeader="true" headerValue="Stats" componentRoute="Hero/HeroStats.vue" />
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 
 <script>
-import BaseWidget from '../components/BaseWidget.vue'
+import BaseWidget from "../components/BaseWidget.vue";
+import { mapGetters } from "vuex";
 
 export default {
-  name: 'hero',
+  name: "hero",
   components: {
     BaseWidget
   },
-  props: {
-    heroName: {
-      type: String,
-      isRequired: true
-    }
+  computed: {
+    ...mapGetters(["currentChampion"])
   }
-}
+};
 </script>

@@ -15,7 +15,8 @@ import Search from "../components/SearchInput.vue";
 export default {
   name: "app",
   components: {
-    Search
+    Search,
+    Hero
   }
 };
 </script>

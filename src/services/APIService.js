@@ -1,12 +1,12 @@
 import axios from "axios";
 
 const ApiService = {
-  queryAI() {
+  queryAI(query) {
     let url = "http://127.0.0.1:8000/analyse";
 
     return new Promise(resolve => {
       axios
-        .post(url, { query: "donne moi yasuo" })
+        .post(url, { query: query })
         .then(function(response) {
           // handle success
           resolve(response);

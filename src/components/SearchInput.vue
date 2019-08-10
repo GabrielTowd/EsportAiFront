@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: "search",
   data() {
@@ -23,16 +25,19 @@ export default {
     };
   },
   created() {
-    window.addEventListener("scroll", () =>
-      this.watchScroll(this.$store.state.hasResult)
-    );
+    // window.addEventListener("scroll", () => this.watchScroll(this.showView));
+  },
+  computed: {
+    ...mapGetters(["showResult"])
   },
   methods: {
     submitQuestion: function(question) {
       let screenHeight = window.innerHeight;
-      window.scrollTo(0, screenHeight);
-      console.log(question);
-      this.$store.dispatch("QUERY_AI");
+      this.$store.dispatch("QUERY_AI", question).then(res => {
+        if (res.status === 200) this.$store.dispatch("SHOW_RESULT");
+        console.log("fooo");
+        window.scrollTo(0, screenHeight);
+      });
       document.activeElement.blur();
     },
     watchScroll: function(shouldScroll) {
