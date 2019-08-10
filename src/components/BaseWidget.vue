@@ -1,5 +1,5 @@
 <template>
-  <div class="widget" :class="widgetClass" >
+  <div class="widget">
     <div class="header" v-if="hasHeader">
       <h2>{{ headerValue }}</h2>
       <div v-if="hasHeaderNav">
@@ -32,7 +32,6 @@ export default {
       type: Boolean,
       default: false
     },
-    widgetClass: String,
     componentRoute: {
       type: String,
       isRequired: true

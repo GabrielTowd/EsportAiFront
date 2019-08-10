@@ -3,13 +3,13 @@
     <div class="search-page">
       <search></search>
     </div>
-    <hero heroName="Aatrox"></hero>
+    <hero rankPosition="1"></hero>
   </div>
 </template>
 
 
 <script>
-import Hero from './Hero.vue'
+import Hero from './HeroComparatif.vue'
 import Search from '../components/SearchInput.vue'
 
 export default {

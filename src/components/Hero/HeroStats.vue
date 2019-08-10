@@ -1,5 +1,5 @@
 <template>
-  <table>
+  <table class="hero-stats">
     <thead>
       <tr>
         <td>Nom</td>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hero-infos">
     <div class="back">
       <img src="../../assets/img/arrow-left.svg">
       <span @click="this.back">Retour</span>
@@ -47,7 +47,6 @@
 export default {
   data () {
     return {
-      // GET VERSION DYNAMICALLY !
       heroUrlPic: `${this.$store.state.baseUrl}img/champion/${this.$store.state.name}.png`
     }
   },

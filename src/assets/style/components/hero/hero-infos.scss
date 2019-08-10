@@ -1,6 +1,5 @@
-.infos {
+.hero-infos {
   padding: $padding-normal;
-  margin-bottom: $padding-normal;
 
   .back {
     cursor: pointer;
@@ -40,7 +39,7 @@
     color: $txt-ternary;
     font-size: $fnt-big;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 
   .value {

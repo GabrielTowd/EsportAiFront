@@ -3,14 +3,12 @@
     <div class="main-left">
       <base-widget
         componentRoute="Hero/HeroInfos.vue"
-        widgetClass="infos"
       />
       <base-widget
         :hasHeader="true"
         headerValue="Skins"
         :hasHeaderNav="false"
         componentRoute="Hero/HeroSkins.vue"
-        widgetClass="skins"
       />
     </div>
     <div class="main-right">
@@ -18,7 +16,6 @@
         :hasHeader="true"
         headerValue="Sorts"
         componentRoute="Hero/HeroSpells.vue"
-        widgetClass="spells"
       />
       <div class="sub-right-bottom">
         <div class="center">
@@ -27,21 +24,18 @@
             headerValue="Astuces"
             :hasHeaderNav="true"
             componentRoute="Hero/HeroTips.vue"
-            widgetClass="tips"
           />
           <base-widget
             :hasHeader="true"
             headerValue="Objects Recommandés"
             :hasHeaderNav="true"
             componentRoute="Hero/HeroObjects.vue"
-            widgetClass="objects"
           />
         </div>
         <base-widget
           :hasHeader="true"
           headerValue="Stats"
           componentRoute="Hero/HeroStats.vue"
-          widgetClass="stats"
         />
       </div>
     </div>
