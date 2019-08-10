@@ -47,7 +47,6 @@
 export default {
   data () {
     return {
-      // GET VERSION DYNAMICALLY !
       heroUrlPic: `${this.$store.state.baseUrl}img/champion/${this.$store.state.name}.png`
     }
   },

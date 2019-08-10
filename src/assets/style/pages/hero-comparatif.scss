@@ -1,0 +1,11 @@
+.hero-comparatif{
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    >div{
+        width: 33%;
+        height: max-content;
+    }
+}
