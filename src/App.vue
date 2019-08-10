@@ -5,16 +5,16 @@
 </template>
 
 <script>
-import Home from './pages/Home.vue'
+import Home from "./pages/Home.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Home
   }
-}
+};
 </script>
 
 <style lang='scss'>
-  @import './assets/style/style.scss';
+@import "./assets/style/style.scss";
 </style>

@@ -3,20 +3,19 @@
     <div class="search-page">
       <search></search>
     </div>
-    <hero rankPosition="1"></hero>
+    <hero></hero>
   </div>
 </template>
 
 
 <script>
-import Hero from './HeroComparatif.vue'
-import Search from '../components/SearchInput.vue'
+import Hero from "./Hero.vue";
+import Search from "../components/SearchInput.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Hero,
     Search
   }
-}
+};
 </script>
