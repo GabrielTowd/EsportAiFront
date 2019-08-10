@@ -1,25 +1,23 @@
 .stats {
-  table {
-    width: 100%;
+  width: 100%;
 
-    td {
-      padding: 13px $padding-normal;
-      font-size: $fnt-normal;
-      text-transform: capitalize;
+  td {
+    padding: 13px $padding-normal;
+    font-size: $fnt-normal;
+    text-transform: capitalize;
+  }
+
+  thead{
+    td{
+      text-transform: uppercase;
+      color: $txt-ternary;
+      font-weight: 800;
     }
+  }
 
-    thead{
-      td{
-        text-transform: uppercase;
-        color: $txt-ternary;
-        font-weight: 800;
-      }
-    }
-
-    tbody{
-      tr:nth-child(odd){
-        background-color: $bg-black;
-      }
+  tbody{
+    tr:nth-child(odd){
+      background-color: $bg-black;
     }
   }
 }

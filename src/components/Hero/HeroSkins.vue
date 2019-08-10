@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="skins">
     <img 
       alt="Champion skin" 
       v-for="(item, key) in this.skinUrls" 

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="objects">
     <div 
-      v-for="(mode, key) in this.$store.state.recommended[this.count].blocks" 
+      v-for="(mode, key) in this.$store.state.recommended[this.count % this.$store.state.recommended.length].blocks" 
       :key="key"
       class="content"
     >

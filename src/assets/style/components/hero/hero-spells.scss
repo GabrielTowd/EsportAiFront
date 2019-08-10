@@ -1,7 +1,5 @@
 .spells {
-  >div:not(.header){
-    padding: $padding-normal 0 $padding-half 0;
-  }
+  padding: $padding-normal 0 $padding-half 0;
 
   .spells-details {
     display: flex;
