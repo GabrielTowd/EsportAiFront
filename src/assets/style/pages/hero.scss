@@ -38,12 +38,11 @@
       }
     }
   }
-
-  @import '../components/hero/hero-infos.scss';
-  @import '../components/hero/hero-skins.scss';
-  @import '../components/hero/hero-tips.scss';
-  @import '../components/hero/hero-objects.scss';
-  @import '../components/hero/hero-spells.scss';
-  @import '../components/hero/hero-stats.scss';
-
 }
+
+@import '../components/hero/hero-infos.scss';
+@import '../components/hero/hero-skins.scss';
+@import '../components/hero/hero-tips.scss';
+@import '../components/hero/hero-objects.scss';
+@import '../components/hero/hero-spells.scss';
+@import '../components/hero/hero-stats.scss';

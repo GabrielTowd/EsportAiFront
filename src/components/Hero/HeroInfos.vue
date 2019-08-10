@@ -1,5 +1,5 @@
 <template>
-  <div class="infos">
+  <div class="hero-infos">
     <div class="back">
       <img src="../../assets/img/arrow-left.svg">
       <span @click="this.back">Retour</span>

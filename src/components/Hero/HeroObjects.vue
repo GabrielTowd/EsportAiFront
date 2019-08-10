@@ -1,5 +1,5 @@
 <template>
-  <div class="objects">
+  <div class="hero-objects">
     <div 
       v-for="(mode, key) in this.$store.state.recommended[this.count % this.$store.state.recommended.length].blocks" 
       :key="key"

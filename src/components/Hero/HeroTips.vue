@@ -1,5 +1,5 @@
 <template>
-  <div class="tips">
+  <div class="hero-tips">
     <p>" {{ tips[count % tips.length] }} "</p>
   </div>
 </template>

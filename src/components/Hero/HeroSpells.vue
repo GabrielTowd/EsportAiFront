@@ -1,5 +1,5 @@
 <template>
-  <div class="spells">
+  <div class="hero-spells">
     <div class="spells-details">
       <div v-for="(spell, key) in this.$store.state.spells" :key="key">
         <div class="top">
