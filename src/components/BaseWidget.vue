@@ -11,6 +11,7 @@
     <component
       :is='currentComponent'
       v-bind:count='count'
+      v-bind:championData='championData'
     ></component>
   </div>
 </template>
@@ -34,6 +35,10 @@ export default {
     },
     componentRoute: {
       type: String,
+      isRequired: true
+    },
+    championData: {
+      type: Object,
       isRequired: true
     }
   },

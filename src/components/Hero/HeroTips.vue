@@ -13,9 +13,13 @@ export default {
   },
   props: {
     count: Number,
+    championData: {
+      type: Object,
+      isRequired: true
+    }
   },
   created: function () {
-    this.tips = this.$store.state.allytips.concat(this.$store.state.enemytips)
+    this.tips = this.championData.ally_tips.concat(this.championData.enemy_tips)
   }
 }
 </script>

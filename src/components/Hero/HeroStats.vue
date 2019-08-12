@@ -10,13 +10,14 @@
     <tbody>
       <tr v-for="(stat, key) in this.statsProperties" :key=key>
         <td>{{stat}}</td>
-        <td>{{ vm.$store.state.stats[stat.replace(/\s/g, '')] }}</td>
-        <td>{{ vm.$store.state.stats[stat.replace(/\s/g, '') + 'perlevel'] }}</td>
-      </tr>
-      <tr>
-        <td>attack speed offset</td>
-        <td>{{ vm.$store.state.stats.attackspeedoffset }}</td>
-        <td>{{ vm.$store.state.stats.attackspeedperlevel }}</td>
+        <td v-if="vm.championData.stats[stat.replace(/\s/g, '')]">
+          {{ vm.championData.stats[stat.replace(/\s/g, '')] }}
+        </td>
+        <td v-else>/</td>
+        <td v-if="vm.championData.stats[stat.replace(/\s/g, '') + 'perlevel']">
+          {{ vm.championData.stats[stat.replace(/\s/g, '') + 'perlevel'] }}
+        </td>
+        <td v-else>/</td>
       </tr>
     </tbody>
   </table>
@@ -37,8 +38,16 @@ export default {
         'hp regen',
         'mp regen',
         'crit',
-        'attack damage'
+        'attack damage',
+        'attack speed',
+        'attack speed offset'
       ]
+    }
+  },
+  props: {
+    championData: {
+      type: Object,
+      isRequired: true
     }
   }
 }

@@ -1,17 +1,25 @@
 <template>
   <div class="hero">
-    <h1>{{ currentChampion.name }}</h1>
-    <!-- <div class="main-left">
-      <base-widget componentRoute="Hero/HeroInfos.vue" />
+    <div class="main-left">
+      <base-widget 
+        componentRoute="Hero/HeroInfos.vue" 
+        :championData="currentChampion"
+      />
       <base-widget
         :hasHeader="true"
         headerValue="Skins"
-        :hasHeaderNav="false"
+        :hasHeaderNav="true"
         componentRoute="Hero/HeroSkins.vue"
+        :championData="currentChampion"
       />
     </div>
     <div class="main-right">
-      <base-widget :hasHeader="true" headerValue="Sorts" componentRoute="Hero/HeroSpells.vue" />
+      <base-widget 
+        :hasHeader="true" 
+        headerValue="Sorts" 
+        componentRoute="Hero/HeroSpells.vue" 
+        :championData="currentChampion"
+      />
       <div class="sub-right-bottom">
         <div class="center">
           <base-widget
@@ -19,17 +27,24 @@
             headerValue="Astuces"
             :hasHeaderNav="true"
             componentRoute="Hero/HeroTips.vue"
+            :championData="currentChampion"
           />
           <base-widget
             :hasHeader="true"
             headerValue="Objects Recommandés"
             :hasHeaderNav="true"
             componentRoute="Hero/HeroObjects.vue"
+            :championData="currentChampion"
           />
         </div>
-        <base-widget :hasHeader="true" headerValue="Stats" componentRoute="Hero/HeroStats.vue" />
+        <base-widget 
+          :hasHeader="true" 
+          headerValue="Stats" 
+          componentRoute="Hero/HeroStats.vue" 
+          :championData="currentChampion"
+        />
       </div>
-    </div>-->
+    </div>
   </div>
 </template>
 

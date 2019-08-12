@@ -1,7 +1,7 @@
 <template>
   <div class="hero-objects">
     <div 
-      v-for="(mode, key) in this.$store.state.recommended[this.count % this.$store.state.recommended.length].blocks" 
+      v-for="(mode, key) in this.championData.recommended[this.count % this.championData.recommended.length].blocks" 
       :key="key"
       class="content"
     >
@@ -10,7 +10,7 @@
         <img 
           v-for="(object, objKey) in mode.items" 
           :key="objKey" 
-          :src="vm.$store.state.baseUrl + 'img/item/' + object.id + '.png'" 
+          :src="dataDragonBaseUrl + '/img/item/' + object.id + '.png'" 
           alt="Recommended object"
         />
       </div>
@@ -19,14 +19,23 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
-  props: {
-    count: Number
-  },
   data () {
     return {
       vm: this
     }
+  },
+  props: {
+    count: Number,
+    championData: {
+      type: Object,
+      isRequired: true
+    }
+  },
+  computed: {
+    ...mapGetters(["dataDragonBaseUrl"])
   }
 }
 </script>
