@@ -2,7 +2,7 @@
   <div class="hero-infos">
     <div class="back">
       <img src="../../assets/img/arrow-left.svg" />
-      <span @click="$store.commit('CLEAR_DATA')">Retour</span>
+      <span @click="this.back">Retour</span>
     </div>
     <img 
       :src="`${dataDragonBaseUrl}/img/champion/${this.championData.name}.png`" 
@@ -62,6 +62,7 @@ export default {
   methods: {
     back: function() {
       this.$store.commit("SHOW_RESULT");
+      this.$store.commit("CLEAR_DATA");
       window.scrollTo(0, 0);
     }
   }

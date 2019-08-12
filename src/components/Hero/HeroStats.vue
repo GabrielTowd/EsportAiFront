@@ -13,15 +13,11 @@
         <td v-if="vm.championData.stats[stat.replace(/\s/g, '')]">
           {{ vm.championData.stats[stat.replace(/\s/g, '')] }}
         </td>
-        <td v-else>
-          /
-        </td>
+        <td v-else>/</td>
         <td v-if="vm.championData.stats[stat.replace(/\s/g, '') + 'perlevel']">
           {{ vm.championData.stats[stat.replace(/\s/g, '') + 'perlevel'] }}
         </td>
-        <td v-else>
-          /
-        </td>
+        <td v-else>/</td>
       </tr>
     </tbody>
   </table>
