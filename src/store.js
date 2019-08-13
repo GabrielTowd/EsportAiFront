@@ -35,6 +35,7 @@ export default new Vuex.Store({
   actions: {
     QUERY_AI(context, query) {
       return ApiService.queryAI(query).then(data => {
+        console.log(data)
         context.commit("SET_CURRENT_CHAMPION", data.data);
         context.commit("SET_ANSWER_TYPE", data.data);
         return data;

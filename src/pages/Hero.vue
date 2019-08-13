@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero flex">
     <div class="main-left">
       <base-widget 
         componentRoute="Hero/HeroInfos.vue" 

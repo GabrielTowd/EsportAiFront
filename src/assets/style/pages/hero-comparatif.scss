@@ -1,11 +1,13 @@
-.hero-comparatif{
+.hero-comparatif {
     min-height: 100vh;
     padding: 50px;
-    display: flex;
-    justify-content: space-between;
 
-    >div{
+    >div>div{
         width: 33%;
+    }
+
+    >div:first-child>div {
         height: max-content;
+        margin-bottom: $padding-normal;
     }
 }
