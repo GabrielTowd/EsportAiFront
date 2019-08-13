@@ -1,15 +1,11 @@
 <template>
   <div class="hero-infos">
-    <div class="back">
-      <img src="../../assets/img/arrow-left.svg" />
-      <span @click="this.back">Retour</span>
-    </div>
     <img 
       :src="`${dataDragonBaseUrl}/img/champion/${this.championData.name}.png`" 
       alt="Hero pic square" class="hero-pic" 
     />
-    <h1>{{ this.championData.name }}</h1>
-    <h2>{{ this.championData.title }}</h2>
+    <h2>{{ this.championData.name }}</h2>
+    <h3>{{ this.championData.title }}</h3>
     <div class="main-infos">
       <div class="role">
         <p class="label">Rôle</p>
@@ -58,13 +54,6 @@ export default {
   },
   computed: {
     ...mapGetters(["dataDragonBaseUrl"])
-  },
-  methods: {
-    back: function() {
-      this.$store.commit("SHOW_RESULT");
-      this.$store.commit("CLEAR_DATA");
-      window.scrollTo(0, 0);
-    }
   }
 };
 </script>

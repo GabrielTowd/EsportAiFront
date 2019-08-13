@@ -10,6 +10,7 @@ body{
   transition: all ease 1s;
 }
 
+@import 'components/header.scss';
 @import 'components/base-widget.scss';
 @import 'components/search-input.scss';
 

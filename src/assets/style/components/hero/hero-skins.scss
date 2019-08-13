@@ -1,11 +1,15 @@
 .hero-skins {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 100%;
   overflow: scroll;
 
   img {
     max-width: 22%;
     margin-right: 4%;
+
+    &:last-child{
+      margin-right: 0;
+    }
   }
 }

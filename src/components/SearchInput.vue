@@ -29,6 +29,8 @@ export default {
   },
   methods: {
     submitQuestion: function(question) {
+      this.$store.dispatch("SHOW_RESULT");
+      this.$store.dispatch("CLEAR_DATA");
       this.$store.dispatch("QUERY_AI", question).then(res => {
         if (res.status === 200) this.$store.dispatch("SHOW_RESULT")
         document.activeElement.blur()
