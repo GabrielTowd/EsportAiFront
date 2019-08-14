@@ -1,7 +1,7 @@
 @import 'reset.scss';
 @import 'variables.scss';
 
-body{
+body {
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,7 +10,7 @@ body{
   transition: all ease 1s;
 }
 
-.flex{
+.flex {
   display: flex;
   justify-content: space-between;
 }
@@ -20,5 +20,5 @@ body{
 @import 'components/search-input.scss';
 
 @import 'pages/hero.scss';
-@import 'pages/hero-comparatif.scss';
+@import 'pages/hero-comparaison.scss';
 @import 'pages/home.scss'

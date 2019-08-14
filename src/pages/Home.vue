@@ -5,7 +5,7 @@
     </div>
     <header-component v-if="answerType !== null"/>
     <hero v-if="answerType === 'ask_champion'"/>
-    <hero-comparatif v-if="answerType === 'compare_champion'"/>
+    <hero-comparaison v-if="answerType === 'compare_champion'"/>
   </div>
 </template>
 
@@ -14,7 +14,7 @@
 import Search from "../components/SearchInput.vue";
 import HeaderComponent from "../components/Header.vue";
 import Hero from "./Hero.vue";
-import HeroComparatif from "./HeroComparatif.vue";
+import HeroComparaison from "./HeroComparaison.vue";
 import { mapGetters} from "vuex";
 
 export default {
@@ -23,7 +23,7 @@ export default {
     Search,
     HeaderComponent,
     Hero,
-    HeroComparatif
+    HeroComparaison
   },
   computed: {
     ...mapGetters(["answerType"])

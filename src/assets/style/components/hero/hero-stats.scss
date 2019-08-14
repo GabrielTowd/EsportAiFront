@@ -7,16 +7,16 @@
     text-transform: capitalize;
   }
 
-  thead{
-    td{
+  thead {
+    td {
       text-transform: uppercase;
       color: $txt-ternary;
       font-weight: 800;
     }
   }
 
-  tbody{
-    tr:nth-child(odd){
+  tbody {
+    tr:nth-child(odd) {
       background-color: $bg-black;
     }
   }

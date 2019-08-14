@@ -1,0 +1,47 @@
+.hero-stats-comparaison {
+  width: 100%;
+
+  td {
+    padding: 7px $padding-normal;
+    font-size: $fnt-normal;
+    text-transform: capitalize;
+    vertical-align: middle;
+
+    p:nth-child(2){
+      opacity: .5;
+    }
+  }
+
+  thead {
+    td {
+      padding: 13px $padding-normal;
+      text-transform: uppercase;
+      color: $txt-ternary;
+      font-weight: 800;
+    }
+  }
+  
+  tbody {
+    tr:nth-child(odd) {
+      background-color: $bg-black;
+    }
+  }
+
+  tr {
+    td:first-child {
+      width: 35%;
+      text-align: right;
+    }
+
+    td:nth-child(2) {
+      width: 30%;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    td:nth-child(3) {
+      width: 35%;
+    }
+  }
+}

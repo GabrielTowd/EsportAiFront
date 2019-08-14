@@ -3,23 +3,33 @@
         <div class="flex">
           <base-widget
             componentRoute="Hero/HeroTile.vue"
-            :championData="currentChampion[0]"
+            :championData="data[0]"
           />
-          <div></div>
+          <base-widget
+            headerValue="Comparatif des Héros"
+            componentRoute="Hero/HeroTileComparaison.vue"
+            :championData="data"
+          />
           <base-widget
             componentRoute="Hero/HeroTile.vue"
-            :championData="currentChampion[1]"
+            :championData="data[1]"
           />
         </div>
         <div class="flex">
           <base-widget
+            headerValue="Stats"
             componentRoute="Hero/HeroStats.vue"
-            :championData="currentChampion[0]"
+            :championData="data[0]"
           />
-          <div></div>
           <base-widget
+            headerValue="Comparatif des stats"
+            componentRoute="Hero/HeroStatsComparaison.vue"
+            :championData="data"
+          />
+          <base-widget
+            headerValue="Stats"
             componentRoute="Hero/HeroStats.vue"
-            :championData="currentChampion[1]"
+            :championData="data[1]"
           />
         </div>
     </div>
@@ -35,7 +45,7 @@ export default {
     BaseWidget
   },
   computed: {
-    ...mapGetters(['currentChampion'])
+    ...mapGetters(['data'])
   }
 }
 </script>

@@ -1,0 +1,23 @@
+.hero-comparatif {
+    min-height: 100vh;
+    padding: 30px 50px 50px 50px;
+
+    >div>div {
+        width: 33%;
+
+        &:nth-child(2) {
+            margin: 0 $padding-normal;
+        }
+    }
+
+    >div:first-child>div {
+        height: max-content;
+        margin-bottom: $padding-normal;
+    }
+
+    canvas {
+        height: 200px;
+    }
+}
+
+@import '../components/hero/hero-stats-comparaison.scss';
