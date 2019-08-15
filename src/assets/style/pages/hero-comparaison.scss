@@ -1,6 +1,6 @@
 .hero-comparatif {
     min-height: 100vh;
-    padding: 30px 50px 50px 50px;
+    padding: $page-padding;
 
     >div>div {
         width: 33%;
@@ -17,6 +17,35 @@
 
     canvas {
         height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-comparatif {
+        padding: $mobile-page-padding;
+
+        .flex {
+            flex-wrap: wrap;
+
+            >div {
+                width: 100%;
+
+                &:nth-child(2) {
+                    order: 2;
+                    margin: 0 0 $padding-normal 0;
+                }
+            }
+
+            &:nth-child(2) {
+                >div {
+                    margin-bottom: $padding-normal;
+
+                    &:nth-child(2) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
     }
 }
 

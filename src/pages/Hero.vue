@@ -18,7 +18,7 @@
         componentRoute="Hero/HeroSpells.vue" 
         :championData="data"
       />
-      <div class="sub-right-bottom">
+      <div class="sub-right-bottom flex">
         <div class="center">
           <base-widget
             headerValue="Astuces"

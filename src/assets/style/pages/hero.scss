@@ -1,5 +1,5 @@
 .hero {
-  padding: 30px 50px 50px 50px;
+  padding: $page-padding;
   
   .main-left {
     width: 33%;
@@ -15,8 +15,6 @@
     padding-left: $padding-half;
 
     .sub-right-bottom{
-      display: flex;
-      justify-content: space-between;
       margin-top: $padding-normal;
 
       .center{
@@ -36,6 +34,12 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        padding: $mobile-page-padding;
+    }
 }
 
 @import '../components/hero/hero-infos.scss';
