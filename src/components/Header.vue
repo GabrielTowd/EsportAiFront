@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <img src="../assets/img/close.svg" alt="close button" @click="this.back">
-    <h1>{{ this.setTitle(answerType, currentChampion.name) }}</h1>
+    <h1>{{ this.setTitle(answerType, data) }}</h1>
     <p></p>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
     )
   },
   computed : {
-    ...mapGetters(['currentChampion', 'answerType'])
+    ...mapGetters(['data', 'answerType'])
   },
   methods : {
     back: function () {
@@ -34,10 +34,12 @@ export default {
         800
       )
     },
-    setTitle : function (answerTypeValue, currentChampionName) {
+    setTitle : function (answerTypeValue, currentChampionData) {
       switch (answerTypeValue) {
         case "ask_champion" :
-          return "Descriptif du champion " + currentChampionName;
+          return "Descriptif du champion " + currentChampionData.name;
+        case "compare_champion" :
+          return `Comparaison de ${currentChampionData[0].name} et ${currentChampionData[1].name}`
       }
       
     }

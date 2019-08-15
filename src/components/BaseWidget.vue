@@ -1,6 +1,6 @@
 <template>
   <div class="widget">
-    <div class="header" v-if="hasHeader">
+    <div class="header" v-if="headerValue">
       <h2>{{ headerValue }}</h2>
       <div v-if="hasHeaderNav">
         <img src="../assets/img/arrow-left.svg" v-on:click="count--">
@@ -24,10 +24,6 @@ export default {
     }
   },
   props: {
-    hasHeader: {
-      type: Boolean,
-      default: false
-    },
     headerValue: String,
     hasHeaderNav: {
       type: Boolean,
@@ -38,7 +34,7 @@ export default {
       isRequired: true
     },
     championData: {
-      type: Object,
+      type: [Object, Array],
       isRequired: true
     }
   },

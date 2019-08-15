@@ -6,20 +6,20 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    currentChampion: {},
+    data: {},
     answerType: null,
     showResult: false,
     dataDragonBaseUrl: "http://ddragon.leagueoflegends.com/cdn/6.24.1"
   },
   getters: {
-    currentChampion: state => state.currentChampion,
+    data: state => state.data,
     answerType: state => state.answerType,
     showResult: state => state.showResult,
     dataDragonBaseUrl: state => state.dataDragonBaseUrl
   },
   mutations: {
-    SET_CURRENT_CHAMPION(state, champion) {
-      state.currentChampion = champion.data;
+    SET_DATA(state, data) {
+      state.data = data.data;
     },
     SET_ANSWER_TYPE(state, answer) {
       state.answerType = answer.answer_type;
@@ -29,13 +29,13 @@ export default new Vuex.Store({
     },
     CLEAR_DATA(state) {
       state.answerType = null;
-      state.currentChampion = {};
+      state.data = {};
     }
   },
   actions: {
     QUERY_AI(context, query) {
       return ApiService.queryAI(query).then(data => {
-        context.commit("SET_CURRENT_CHAMPION", data.data);
+        context.commit("SET_DATA", data.data);
         context.commit("SET_ANSWER_TYPE", data.data);
         return data;
       });

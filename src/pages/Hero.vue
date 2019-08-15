@@ -1,47 +1,42 @@
 <template>
-  <div class="hero">
+  <div class="hero flex">
     <div class="main-left">
-      <base-widget 
+      <base-widget
         componentRoute="Hero/HeroInfos.vue" 
-        :championData="currentChampion"
+        :championData="data"
       />
       <base-widget
-        :hasHeader="true"
         headerValue="Skins"
         :hasHeaderNav="true"
         componentRoute="Hero/HeroSkins.vue"
-        :championData="currentChampion"
+        :championData="data"
       />
     </div>
     <div class="main-right">
-      <base-widget 
-        :hasHeader="true" 
+      <base-widget
         headerValue="Sorts" 
         componentRoute="Hero/HeroSpells.vue" 
-        :championData="currentChampion"
+        :championData="data"
       />
-      <div class="sub-right-bottom">
+      <div class="sub-right-bottom flex">
         <div class="center">
           <base-widget
-            :hasHeader="true"
             headerValue="Astuces"
             :hasHeaderNav="true"
             componentRoute="Hero/HeroTips.vue"
-            :championData="currentChampion"
+            :championData="data"
           />
           <base-widget
-            :hasHeader="true"
             headerValue="Objects Recommandés"
             :hasHeaderNav="true"
             componentRoute="Hero/HeroObjects.vue"
-            :championData="currentChampion"
+            :championData="data"
           />
         </div>
         <base-widget 
-          :hasHeader="true" 
           headerValue="Stats" 
           componentRoute="Hero/HeroStats.vue" 
-          :championData="currentChampion"
+          :championData="data"
         />
       </div>
     </div>
@@ -58,7 +53,7 @@ export default {
     BaseWidget
   },
   computed: {
-    ...mapGetters(["currentChampion"])
+    ...mapGetters(["data"])
   }
 };
 </script>
